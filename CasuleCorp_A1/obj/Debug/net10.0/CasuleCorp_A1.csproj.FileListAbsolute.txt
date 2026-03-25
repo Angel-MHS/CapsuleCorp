@@ -1,0 +1,15 @@
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\bin\Debug\net10.0\CasuleCorp_A1.exe
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\bin\Debug\net10.0\CasuleCorp_A1.deps.json
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\bin\Debug\net10.0\CasuleCorp_A1.runtimeconfig.json
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\bin\Debug\net10.0\CasuleCorp_A1.dll
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\bin\Debug\net10.0\CasuleCorp_A1.pdb
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.AssemblyInfoInputs.cache
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.AssemblyInfo.cs
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.csproj.CoreCompileInputs.cache
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.sourcelink.json
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.dll
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\refint\CasuleCorp_A1.dll
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.pdb
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\CasuleCorp_A1.genruntimeconfig.cache
+C:\Users\hange\Documents\GitHub\CapsuleCorp\CasuleCorp_A1\obj\Debug\net10.0\ref\CasuleCorp_A1.dll
