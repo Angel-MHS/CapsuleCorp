@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CasuleCorp_A1",
-    "\\Models"
+    "\\Backend",
+    "\\SGIPE_Backend\\Datos"
   ],
-  "SelectedNode": "\\Models\\Producto.cs",
+  "SelectedNode": "\\Backend\\Data (DBcontext)",
   "PreviewInSolutionExplorer": false
 }
