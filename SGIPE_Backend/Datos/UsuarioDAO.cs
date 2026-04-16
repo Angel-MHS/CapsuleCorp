@@ -1,86 +1,85 @@
+using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 
 namespace SGIPE_Backend.Datos
 {
-    // Clase que representa un Usuario
     public class Usuario
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Contrasena { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
         public string Rol { get; set; }
-        
-        // Constructor vacío
-        public Usuario() { }
-        
-        // Constructor con parámetros
-        public Usuario(int id, string nombre, string contrasena, string rol)
-        {
-            Id = id;
-            Nombre = nombre;
-            Contrasena = contrasena;
-            Rol = rol;
-        }
+        public DateTime CreadoEn { get; set; }
     }
     
-    // Clase DAO (Data Access Object) para Usuario
     public class UsuarioDAO
     {
-        // Lista simulada de usuarios (mientras no hay BD real)
-        private List<Usuario> usuariosSimulados;
-        
-        // Constructor: carga usuarios de prueba
-        public UsuarioDAO()
+        public Usuario ValidarUsuario(string nombre, string password)
         {
-            usuariosSimulados = new List<Usuario>();
+            Usuario usuario = null;
             
-            // Agregar 2 usuarios como pide el proyecto
-            usuariosSimulados.Add(new Usuario(1, "admin", "admin123", "Administrador"));
-            usuariosSimulados.Add(new Usuario(2, "empleado", "emp456", "Empleado"));
-        }
-        
-        /// <summary>
-        /// Valida si un usuario existe con las credenciales dadas
-        /// </summary>
-        /// <param name="nombre">Nombre de usuario</param>
-        /// <param name="contrasena">Contraseña</param>
-        /// <returns>El usuario si es válido, null si no</returns>
-        public Usuario ValidarUsuario(string nombre, string contrasena)
-        {
-            foreach (Usuario u in usuariosSimulados)
+            using (var conn = ConexionBD.GetConnection())
             {
-                if (u.Nombre == nombre && u.Contrasena == contrasena)
+                conn.Open();
+                string query = "SELECT id, nombre, email, rol, creado_en FROM usuarios WHERE nombre = @nombre AND password = @password";
+                
+                using (var cmd = new MySqlCommand(query, conn))
                 {
-                    return u;
+                    cmd.Parameters.AddWithValue("@nombre", nombre);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuario = new Usuario
+                            {
+                                Id = reader.GetInt32("id"),
+                                Nombre = reader.GetString("nombre"),
+                                Email = reader.GetString("email"),
+                                Rol = reader.GetString("rol"),
+                                CreadoEn = reader.GetDateTime("creado_en")
+                            };
+                        }
+                    }
                 }
             }
-            return null; // Credenciales incorrectas
+            
+            return usuario;
         }
         
-        /// <summary>
-        /// Obtiene un usuario por su ID
-        /// </summary>
-        /// <param name="id">ID del usuario</param>
-        /// <returns>Usuario encontrado o null</returns>
         public Usuario ObtenerUsuarioPorId(int id)
         {
-            foreach (Usuario u in usuariosSimulados)
+            Usuario usuario = null;
+            
+            using (var conn = ConexionBD.GetConnection())
             {
-                if (u.Id == id)
+                conn.Open();
+                string query = "SELECT id, nombre, email, rol, creado_en FROM usuarios WHERE id = @id";
+                
+                using (var cmd = new MySqlCommand(query, conn))
                 {
-                    return u;
+                    cmd.Parameters.AddWithValue("@id", id);
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuario = new Usuario
+                            {
+                                Id = reader.GetInt32("id"),
+                                Nombre = reader.GetString("nombre"),
+                                Email = reader.GetString("email"),
+                                Rol = reader.GetString("rol"),
+                                CreadoEn = reader.GetDateTime("creado_en")
+                            };
+                        }
+                    }
                 }
             }
-            return null;
-        }
-        
-        /// <summary>
-        /// Obtiene todos los usuarios
-        /// </summary>
-        public List<Usuario> ObtenerTodosLosUsuarios()
-        {
-            return usuariosSimulados;
+            
+            return usuario;
         }
     }
 }
