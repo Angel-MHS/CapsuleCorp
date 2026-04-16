@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Backend",
-    "\\SGIPE_Backend\\Datos"
+    "\\Backend\\Models (Clases)"
   ],
-  "SelectedNode": "\\Backend\\Data (DBcontext)",
+  "SelectedNode": "\\SGIPE_Backend",
   "PreviewInSolutionExplorer": false
 }
