@@ -1,4 +1,6 @@
-public class Producto
+﻿using System;
+
+public class Class1
 {
     public int Id { get; set; }
 
@@ -6,14 +8,9 @@ public class Producto
 
     public string? Descripcion { get; set; }
 
-    public decimal Precio { get; set; }
-
-    public int Stock { get; set; }
-
     public bool Activo { get; set; } = true;
 
     public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-    public int CategoriaId { get; set; }
-    public Categoria Categoria { get; set; }
+    public List<Usuario> Usuarios { get; set; } = new List<Usuario>();
 }
