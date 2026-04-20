@@ -9,14 +9,15 @@ namespace SGIPE_Backend.Datos
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
+        public string Descripcion { get; set; }  // ← NUEVO
         public int CategoriaId { get; set; }
-        public string CategoriaNombre { get; set; }  // Para mostrar en consultas
+        public string CategoriaNombre { get; set; }
         public int Stock { get; set; }
         public decimal PrecioCosto { get; set; }
         public decimal PrecioVenta { get; set; }
         public bool Activo { get; set; }
+        public DateTime FechaCreacion { get; set; }  // ← NUEVO
         
-        // Valor total del inventario para este producto (stock * precio_venta)
         public decimal ValorTotal => Stock * PrecioVenta;
     }
     
@@ -89,12 +90,13 @@ namespace SGIPE_Backend.Datos
             using (var conn = ConexionBD.GetConnection())
             {
                 conn.Open();
-                string query = @"INSERT INTO productos (nombre, categoria_id, stock, precio_costo, precio_venta, activo)
-                                VALUES (@nombre, @categoria_id, @stock, @precio_costo, @precio_venta, 1)";
+                string query = @"INSERT INTO productos (nombre, descripcion, categoria_id, stock, precio_costo, precio_venta, activo)
+                                VALUES (@nombre, @descripcion, @categoria_id, @stock, @precio_costo, @precio_venta, 1)";
                 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre", producto.Nombre);
+                    cmd.Parameters.AddWithValue("@descripcion", producto.Descripcion ?? "");
                     cmd.Parameters.AddWithValue("@categoria_id", producto.CategoriaId);
                     cmd.Parameters.AddWithValue("@stock", producto.Stock);
                     cmd.Parameters.AddWithValue("@precio_costo", producto.PrecioCosto);
@@ -245,12 +247,14 @@ namespace SGIPE_Backend.Datos
             {
                 Id = reader.GetInt32("id"),
                 Nombre = reader.GetString("nombre"),
+                Descripcion = reader.IsDBNull(reader.GetOrdinal("descripcion")) ? "" : reader.GetString("descripcion"),
                 CategoriaId = reader.GetInt32("categoria_id"),
                 CategoriaNombre = reader.GetString("categoria_nombre"),
                 Stock = reader.GetInt32("stock"),
                 PrecioCosto = reader.GetDecimal("precio_costo"),
                 PrecioVenta = reader.GetDecimal("precio_venta"),
-                Activo = reader.GetBoolean("activo")
+                Activo = reader.GetBoolean("activo"),
+                FechaCreacion = reader.GetDateTime("fecha_creacion")
             };
         }
     }
