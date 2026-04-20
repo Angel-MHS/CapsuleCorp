@@ -1,86 +1,146 @@
+using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 
 namespace SGIPE_Backend.Datos
 {
-    // Clase que representa un Usuario
     public class Usuario
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string Contrasena { get; set; }
-        public string Rol { get; set; }
-        
-        // Constructor vacío
-        public Usuario() { }
-        
-        // Constructor con parámetros
-        public Usuario(int id, string nombre, string contrasena, string rol)
-        {
-            Id = id;
-            Nombre = nombre;
-            Contrasena = contrasena;
-            Rol = rol;
-        }
+        public string Email { get; set; }
+        public string PasswordHash { get; set; }  // ← cambió de "Password"
+        public int RolId { get; set; }            // ← NUEVO (antes era string Rol)
+        public string RolNombre { get; set; }     // ← NUEVO (para mostrar el nombre del rol)
+        public bool Activo { get; set; }          // ← NUEVO
+        public DateTime FechaCreacion { get; set; } // ← cambió de "CreadoEn"
     }
     
-    // Clase DAO (Data Access Object) para Usuario
     public class UsuarioDAO
     {
-        // Lista simulada de usuarios (mientras no hay BD real)
-        private List<Usuario> usuariosSimulados;
-        
-        // Constructor: carga usuarios de prueba
-        public UsuarioDAO()
-        {
-            usuariosSimulados = new List<Usuario>();
-            
-            // Agregar 2 usuarios como pide el proyecto
-            usuariosSimulados.Add(new Usuario(1, "admin", "admin123", "Administrador"));
-            usuariosSimulados.Add(new Usuario(2, "empleado", "emp456", "Empleado"));
-        }
-        
         /// <summary>
-        /// Valida si un usuario existe con las credenciales dadas
+        /// Validar credenciales (usando password_hash)
         /// </summary>
-        /// <param name="nombre">Nombre de usuario</param>
-        /// <param name="contrasena">Contraseña</param>
-        /// <returns>El usuario si es válido, null si no</returns>
-        public Usuario ValidarUsuario(string nombre, string contrasena)
+        public Usuario ValidarUsuario(string nombre, string password)
         {
-            foreach (Usuario u in usuariosSimulados)
+            Usuario usuario = null;
+            
+            using (var conn = ConexionBD.GetConnection())
             {
-                if (u.Nombre == nombre && u.Contrasena == contrasena)
+                conn.Open();
+                string query = @"SELECT u.id, u.nombre, u.email, u.password_hash, u.rol_id, u.activo, u.fecha_creacion,
+                                       r.nombre as rol_nombre
+                                FROM usuarios u
+                                JOIN roles r ON u.rol_id = r.id
+                                WHERE u.nombre = @nombre AND u.password_hash = @password AND u.activo = 1";
+                
+                using (var cmd = new MySqlCommand(query, conn))
                 {
-                    return u;
+                    cmd.Parameters.AddWithValue("@nombre", nombre);
+                    cmd.Parameters.AddWithValue("@password", password); // En producción, aquí va el hash
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuario = new Usuario
+                            {
+                                Id = reader.GetInt32("id"),
+                                Nombre = reader.GetString("nombre"),
+                                Email = reader.GetString("email"),
+                                PasswordHash = reader.GetString("password_hash"),
+                                RolId = reader.GetInt32("rol_id"),
+                                RolNombre = reader.GetString("rol_nombre"),
+                                Activo = reader.GetBoolean("activo"),
+                                FechaCreacion = reader.GetDateTime("fecha_creacion")
+                            };
+                        }
+                    }
                 }
             }
-            return null; // Credenciales incorrectas
+            
+            return usuario;
         }
         
         /// <summary>
-        /// Obtiene un usuario por su ID
+        /// Obtener usuario por ID (con su rol)
         /// </summary>
-        /// <param name="id">ID del usuario</param>
-        /// <returns>Usuario encontrado o null</returns>
         public Usuario ObtenerUsuarioPorId(int id)
         {
-            foreach (Usuario u in usuariosSimulados)
+            Usuario usuario = null;
+            
+            using (var conn = ConexionBD.GetConnection())
             {
-                if (u.Id == id)
+                conn.Open();
+                string query = @"SELECT u.id, u.nombre, u.email, u.password_hash, u.rol_id, u.activo, u.fecha_creacion,
+                                       r.nombre as rol_nombre
+                                FROM usuarios u
+                                JOIN roles r ON u.rol_id = r.id
+                                WHERE u.id = @id";
+                
+                using (var cmd = new MySqlCommand(query, conn))
                 {
-                    return u;
+                    cmd.Parameters.AddWithValue("@id", id);
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuario = new Usuario
+                            {
+                                Id = reader.GetInt32("id"),
+                                Nombre = reader.GetString("nombre"),
+                                Email = reader.GetString("email"),
+                                PasswordHash = reader.GetString("password_hash"),
+                                RolId = reader.GetInt32("rol_id"),
+                                RolNombre = reader.GetString("rol_nombre"),
+                                Activo = reader.GetBoolean("activo"),
+                                FechaCreacion = reader.GetDateTime("fecha_creacion")
+                            };
+                        }
+                    }
                 }
             }
-            return null;
+            
+            return usuario;
         }
         
         /// <summary>
-        /// Obtiene todos los usuarios
+        /// Obtener TODOS los usuarios activos
         /// </summary>
-        public List<Usuario> ObtenerTodosLosUsuarios()
+        public List<Usuario> ObtenerTodos()
         {
-            return usuariosSimulados;
+            List<Usuario> usuarios = new List<Usuario>();
+            
+            using (var conn = ConexionBD.GetConnection())
+            {
+                conn.Open();
+                string query = @"SELECT u.id, u.nombre, u.email, u.password_hash, u.rol_id, u.activo, u.fecha_creacion,
+                                       r.nombre as rol_nombre
+                                FROM usuarios u
+                                JOIN roles r ON u.rol_id = r.id
+                                WHERE u.activo = 1";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        usuarios.Add(new Usuario
+                        {
+                            Id = reader.GetInt32("id"),
+                            Nombre = reader.GetString("nombre"),
+                            Email = reader.GetString("email"),
+                            PasswordHash = reader.GetString("password_hash"),
+                            RolId = reader.GetInt32("rol_id"),
+                            RolNombre = reader.GetString("rol_nombre"),
+                            Activo = reader.GetBoolean("activo"),
+                            FechaCreacion = reader.GetDateTime("fecha_creacion")
+                        });
+                    }
+                }
+            }
+            
+            return usuarios;
         }
     }
 }
