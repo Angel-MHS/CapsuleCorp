@@ -1,0 +1,131 @@
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+
+namespace SGIPE_Backend.Datos
+{
+    public class MovimientoInventario
+    {
+        public int Id { get; set; }
+        public int ProductoId { get; set; }
+        public string ProductoNombre { get; set; }
+        public int UsuarioId { get; set; }
+        public string UsuarioNombre { get; set; }
+        public string Tipo { get; set; }  // "ENTRADA" o "SALIDA"
+        public int Cantidad { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime FechaCreacion { get; set; }
+    }
+    
+    public class MovimientoInventarioDAO
+    {
+        /// <summary>
+        /// Registrar un movimiento de inventario
+        /// </summary>
+        public bool Registrar(int productoId, int usuarioId, string tipo, int cantidad, string descripcion)
+        {
+            using (var conn = ConexionBD.GetConnection())
+            {
+                conn.Open();
+                string query = @"INSERT INTO movimientos_inventario (producto_id, usuario_id, tipo, cantidad, descripcion)
+                                VALUES (@producto_id, @usuario_id, @tipo, @cantidad, @descripcion)";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@producto_id", productoId);
+                    cmd.Parameters.AddWithValue("@usuario_id", usuarioId);
+                    cmd.Parameters.AddWithValue("@tipo", tipo);
+                    cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                    cmd.Parameters.AddWithValue("@descripcion", descripcion ?? "");
+                    
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Obtener todos los movimientos (historial completo)
+        /// </summary>
+        public List<MovimientoInventario> ObtenerTodos()
+        {
+            List<MovimientoInventario> movimientos = new List<MovimientoInventario>();
+            
+            using (var conn = ConexionBD.GetConnection())
+            {
+                conn.Open();
+                string query = @"SELECT m.*, p.nombre as producto_nombre, u.nombre as usuario_nombre
+                                FROM movimientos_inventario m
+                                JOIN productos p ON m.producto_id = p.id
+                                JOIN usuarios u ON m.usuario_id = u.id
+                                ORDER BY m.fecha_creacion DESC";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        movimientos.Add(new MovimientoInventario
+                        {
+                            Id = reader.GetInt32("id"),
+                            ProductoId = reader.GetInt32("producto_id"),
+                            ProductoNombre = reader.GetString("producto_nombre"),
+                            UsuarioId = reader.GetInt32("usuario_id"),
+                            UsuarioNombre = reader.GetString("usuario_nombre"),
+                            Tipo = reader.GetString("tipo"),
+                            Cantidad = reader.GetInt32("cantidad"),
+                            Descripcion = reader.IsDBNull(reader.GetOrdinal("descripcion")) ? "" : reader.GetString("descripcion"),
+                            FechaCreacion = reader.GetDateTime("fecha_creacion")
+                        });
+                    }
+                }
+            }
+            
+            return movimientos;
+        }
+        
+        /// <summary>
+        /// Obtener movimientos de un producto específico
+        /// </summary>
+        public List<MovimientoInventario> ObtenerPorProducto(int productoId)
+        {
+            List<MovimientoInventario> movimientos = new List<MovimientoInventario>();
+            
+            using (var conn = ConexionBD.GetConnection())
+            {
+                conn.Open();
+                string query = @"SELECT m.*, p.nombre as producto_nombre, u.nombre as usuario_nombre
+                                FROM movimientos_inventario m
+                                JOIN productos p ON m.producto_id = p.id
+                                JOIN usuarios u ON m.usuario_id = u.id
+                                WHERE m.producto_id = @producto_id
+                                ORDER BY m.fecha_creacion DESC";
+                
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@producto_id", productoId);
+                    
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            movimientos.Add(new MovimientoInventario
+                            {
+                                Id = reader.GetInt32("id"),
+                                ProductoId = reader.GetInt32("producto_id"),
+                                ProductoNombre = reader.GetString("producto_nombre"),
+                                UsuarioId = reader.GetInt32("usuario_id"),
+                                UsuarioNombre = reader.GetString("usuario_nombre"),
+                                Tipo = reader.GetString("tipo"),
+                                Cantidad = reader.GetInt32("cantidad"),
+                                Descripcion = reader.IsDBNull(reader.GetOrdinal("descripcion")) ? "" : reader.GetString("descripcion"),
+                                FechaCreacion = reader.GetDateTime("fecha_creacion")
+                            });
+                        }
+                    }
+                }
+            }
+            
+            return movimientos;
+        }
+    }
+}
