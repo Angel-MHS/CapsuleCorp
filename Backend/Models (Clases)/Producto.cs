@@ -19,5 +19,5 @@ public class Producto
     public int CategoriaId { get; set; }
     public Categoria Categoria { get; set; }
 
-    public List<MovimientoInventario> Movimientos { get; set; } = new List<MovimientoInventario>();
+    //public List<MovimientoInventario> Movimientos { get; set; } = new List<MovimientoInventario>();
 }

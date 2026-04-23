@@ -12,5 +12,5 @@ public class Categoria
 
     public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-    public List<Producto> Productos { get; set; } = new List<Producto>();
+    //public List<Producto> Productos { get; set; } = new List<Producto>();
 }

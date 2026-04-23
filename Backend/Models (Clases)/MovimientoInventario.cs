@@ -18,7 +18,7 @@ public class MovimientoInventario
 
     public DateTime Fecha { get; set; } = DateTime.Now;
 
-    // 🔗 Quién hizo el movimiento
+    // Quién hizo el movimiento
     public int UsuarioId { get; set; }
     public Usuario Usuario { get; set; }
 }

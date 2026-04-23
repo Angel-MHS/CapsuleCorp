@@ -1,28 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\MovimientoInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Models (Clases)\\MovimientoInventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Models (Clases)\\Categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Models (Clases)\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Models (Clases)\\Rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Backend\\Models (Clases)\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,76 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MovimientoInventario.cs",
-              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\MovimientoInventario.cs",
-              "RelativeDocumentMoniker": "Backend\\Models (Clases)\\MovimientoInventario.cs",
-              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\MovimientoInventario.cs",
-              "RelativeToolTip": "Backend\\Models (Clases)\\MovimientoInventario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T06:18:47.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Rol.cs",
-              "RelativeDocumentMoniker": "Backend\\Models (Clases)\\Rol.cs",
-              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Rol.cs",
-              "RelativeToolTip": "Backend\\Models (Clases)\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T04:07:57.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Usuario.cs",
-              "RelativeDocumentMoniker": "Backend\\Models (Clases)\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Usuario.cs",
-              "RelativeToolTip": "Backend\\Models (Clases)\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T04:03:50.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Categoria.cs",
-              "RelativeDocumentMoniker": "Backend\\Models (Clases)\\Categoria.cs",
-              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Categoria.cs",
-              "RelativeToolTip": "Backend\\Models (Clases)\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T03:43:27.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Producto.cs",
-              "RelativeDocumentMoniker": "Backend\\Models (Clases)\\Producto.cs",
-              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\Backend\\Models (Clases)\\Producto.cs",
-              "RelativeToolTip": "Backend\\Models (Clases)\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T03:43:22.206Z",
-              "EditorCaption": ""
             }
           ]
         }
