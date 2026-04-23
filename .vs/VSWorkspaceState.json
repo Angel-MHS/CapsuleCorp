@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Backend",
-    "\\Backend\\Models (Clases)",
-    "\\Backend\\Repositories (Acceso A Datos)",
-    "\\Backend\\Services(Logica De Negocios)",
-    "\\CasuleCorp_A1"
+    ""
   ],
-  "SelectedNode": "\\Backend\\Services(Logica De Negocios)\\UsuarioService.cs",
+  "SelectedNode": "\\CasuleCorp_A1",
   "PreviewInSolutionExplorer": false
 }
