@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CasuleCorp_A1"
+    "\\Backend",
+    "\\SGIPE_Backend\\Datos"
   ],
-  "SelectedNode": "\\CapsuleCorp.slnx",
+  "SelectedNode": "\\Backend\\Data (DBcontext)",
   "PreviewInSolutionExplorer": false
 }
