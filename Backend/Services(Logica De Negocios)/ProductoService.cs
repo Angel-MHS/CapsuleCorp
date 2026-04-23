@@ -18,6 +18,11 @@ public class ProductoService
         return await _productoRepo.ObtenerTodos();
     }
 
+    public async Task<Producto?> ObtenerPorId(int id)
+    {
+        return await _productoRepo.ObtenerPorId(id);
+    }
+
     public async Task CrearProducto(Producto producto)
     {
         if (string.IsNullOrWhiteSpace(producto.Nombre))
@@ -29,7 +34,20 @@ public class ProductoService
         if (producto.Stock < 0)
             throw new Exception("El stock no puede ser negativo");
 
-        
+        producto.Activo = true;
+        producto.FechaCreacion = DateTime.Now;
+
+        await _productoRepo.Agregar(producto);
+    }
+
+    public async Task ActualizarProducto(Producto producto)
+    {
+        await _productoRepo.Actualizar(producto);
+    }
+
+    public async Task EliminarProducto(int id)
+    {
+        await _productoRepo.EliminarLogico(id);
     }
 
     public async Task AjustarStock(
@@ -66,6 +84,7 @@ public class ProductoService
             Tipo = tipo,
             UsuarioId = usuarioId,
             Motivo = motivo
+            Fecha = DateTime.Now
         };
 
         // 5. Guardar todo (luego repository)

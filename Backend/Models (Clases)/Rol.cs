@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Class1
+public class Rol
 {
     public int Id { get; set; }
 
@@ -12,5 +12,5 @@ public class Class1
 
     public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
-    public List<Usuario> Usuarios { get; set; } = new List<Usuario>();
+    //public List<Usuario> Usuarios { get; set; } = new List<Usuario>();
 }
