@@ -103,7 +103,7 @@ public class ProductoController : ControllerBase
     {   
         var existe = await _productoService.ObtenerPorId(dto.Id);
         if (existe == null)
-            return NotFound();
+            return NotFound(new { mensaje = "Producto no existe" });
 
         var producto = MapToEntity(dto);
         await _productoService.ActualizarProducto(producto);
@@ -116,7 +116,7 @@ public class ProductoController : ControllerBase
     {
         var existente = await _productoService.ObtenerPorId(id);
         if (existente == null)
-            return NotFound();
+            return NotFound(new { mensaje = "Producto no existe" });
         await _productoService.EliminarProducto(id);
         return Ok();
     }

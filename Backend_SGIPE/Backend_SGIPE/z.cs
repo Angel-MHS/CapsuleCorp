@@ -19,10 +19,13 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IMovimientoInventarioRepository, MovimientoInventarioRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+
 
 // Services
 builder.Services.AddScoped<ProductoService>();
 builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<CategoriaService>();
 
 // Controllers
 builder.Services.AddControllers();

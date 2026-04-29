@@ -10,15 +10,18 @@ public class ProductoService
 {
     private readonly IProductoRepository _productoRepo;
     private readonly IMovimientoInventarioRepository _movimientoRepo;
+    private readonly ICategoriaRepository _categoriaRepo;
     private readonly AppDbContext _context;
 
     public ProductoService(
      IProductoRepository productoRepo,
      IMovimientoInventarioRepository movimientoRepo,
+     ICategoriaRepository categoriaRepo,
      AppDbContext context)
     {
         _productoRepo = productoRepo;
         _movimientoRepo = movimientoRepo;
+        _categoriaRepo = categoriaRepo; 
         _context = context;
     }
 
@@ -43,6 +46,11 @@ public class ProductoService
         if (producto.Stock < 0)
             throw new Exception("El stock no puede ser negativo");
 
+        var categoria = await _categoriaRepo.ObtenerPorId(producto.CategoriaId);
+
+        if (categoria == null || !categoria.Activo)
+            throw new Exception("La categoría no existe o está inactiva");
+
         producto.Activo = true;
         producto.FechaCreacion = DateTime.Now;
 
@@ -51,6 +59,16 @@ public class ProductoService
 
     public async Task ActualizarProducto(Producto producto)
     {
+        var existente = await _productoRepo.ObtenerPorId(producto.Id);
+
+        if (existente == null)
+            throw new Exception("Producto inexistente");
+
+        var categoria = await _categoriaRepo.ObtenerPorId(producto.CategoriaId);
+
+        if (categoria == null || !categoria.Activo)
+            throw new Exception("La categoría no existe o está inactiva");
+
         await _productoRepo.Actualizar(producto);
     }
 
@@ -89,7 +107,7 @@ public class ProductoService
 
             await _productoRepo.Actualizar(producto);
 
-            // Crear movimiento 
+            // Crear movimiento     
             var movimiento = new MovimientoInventario
             {
                 ProductoId = productoId,
