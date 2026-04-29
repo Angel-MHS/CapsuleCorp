@@ -1,0 +1,105 @@
+﻿<Window x:Class="SGIPE_Frontend.Views.MenuPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CapsuleCorp - Menú"
+        Height="500" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#1A1A1A">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2575BB"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="0,0,0,-16">
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#2575BB" Offset="0"/>
+                <GradientStop Color="#000000" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <Border Width="752"
+                Background="White"
+                CornerRadius="25"
+                BorderBrush="#2575BB"
+                BorderThickness="8"
+                Padding="25"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" Height="457">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#2575BB" Opacity="0.3"/>
+            </Border.Effect>
+
+            <StackPanel>
+
+                <!-- ICONO -->
+                <Ellipse Width="60" Height="60" Fill="#2575BB" Margin="0,0,0,10"/>
+
+                <!-- TÍTULO -->
+                <TextBlock Text="MENÚ PRINCIPAL"
+                           Foreground="#1A1A1A"
+                           FontSize="26"
+                           FontWeight="ExtraBold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <!-- GRID DE BOTONES -->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- FILA 1 -->
+                    <Button Content="CONSULTAR PRODUCTOS"
+                            Grid.Row="0" Grid.Column="0"
+                            Click="BtnConsulta_Click"/>
+
+                    <Button Content="ALTA DE PRODUCTO"
+                            Grid.Row="0" Grid.Column="1"
+                            Click="BtnAlta_Click"/>
+
+                    <!-- FILA 2 -->
+                    <Button Content="ELIMINAR PRODUCTO"
+                            Grid.Row="1" Grid.Column="0"
+                            Click="BtnEliminar_Click"/>
+
+                    <Button Content="MODIFICAR PRODUCTO"
+                            Grid.Row="1" Grid.Column="1"
+                            Click="BtnModificar_Click"/>
+
+                    <!-- FILA 3 -->
+                    <Button Content="INVENTARIO"
+                            Grid.Row="2" Grid.Column="0"
+                            Click="BtnInventario_Click"/>
+
+                    <Button Content="CALCULAR INVENTARIO"
+                            Grid.Row="2" Grid.Column="1"
+                            Click="BtnCalcular_Click"/>
+                </Grid>
+                <Button Content="CERRAR SESIÓN"
+                        Background="#AA3333"
+                        Foreground="White"
+                        Height="50"
+                        Click="BtnCerrar_Click"/>
+
+                <!-- BOTÓN FINAL -->
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
