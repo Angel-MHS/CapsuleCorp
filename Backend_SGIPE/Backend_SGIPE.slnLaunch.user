@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Backend_SGIPE\\Backend_SGIPE.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\SGIPE_Frontend\\SGIPE_Frontend\\SGIPE_Frontend.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

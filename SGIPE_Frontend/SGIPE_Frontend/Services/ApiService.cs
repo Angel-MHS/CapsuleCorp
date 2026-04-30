@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Json;
 using SGIPE_Frontend.Models;
@@ -81,7 +78,7 @@ public class ApiService
         return response.IsSuccessStatusCode;
     }
 
-    public async Task<bool> AjustarStock(MovimientoStockRequest movimiento)
+    public async Task<bool> AjustarStock(MovimientoInventarioRequest movimiento)
     {
         var url =
             $"api/producto/stock?productoId={movimiento.ProductoId}" +

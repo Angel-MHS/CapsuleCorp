@@ -1,15 +1,5 @@
-﻿using SGIPE_Frontend.View;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using SGIPE_Frontend.View;
 
 namespace SGIPE_Frontend.Views
 {
@@ -22,40 +12,51 @@ namespace SGIPE_Frontend.Views
 
         private void BtnConsulta_Click(object sender, RoutedEventArgs e)
         {
-            new Consulta().Show();
-            this.Close();
+            Consulta ventana = new Consulta();
+            ventana.Show();
+            Close();
         }
 
         private void BtnAlta_Click(object sender, RoutedEventArgs e)
         {
-            new AltaProducto().Show();
-            this.Close();
+            AltaProducto ventana = new AltaProducto();
+            ventana.Show();
+            Close();
         }
 
         private void BtnEliminar_Click(object sender, RoutedEventArgs e)
         {
-            new BajaProducto().Show();
-            this.Close();
+            BajaProducto ventana = new BajaProducto();
+            ventana.Show();
+            Close();
+        }
+
+        private void BtnModificar_Click(object sender, RoutedEventArgs e)
+        {
+            ModificarProducto ventana = new ModificarProducto();
+            ventana.Show();
+            Close();
         }
 
         private void BtnInventario_Click(object sender, RoutedEventArgs e)
         {
-            new Inventario().Show();
-            this.Close();
+            Inventario ventana = new Inventario();
+            ventana.Show();
+            Close();
+        }
+
+        private void BtnCalcular_Click(object sender, RoutedEventArgs e)
+        {
+            CalcularInventario ventana = new CalcularInventario();
+            ventana.Show();
+            Close();
         }
 
         private void BtnCerrar_Click(object sender, RoutedEventArgs e)
         {
-            new Login().Show();
-            this.Close();
-        }
-        private void BtnCalcular_Click(object sender, RoutedEventArgs e)
-        {
-            new CalcularInventario().Show();
-        }
-        private void BtnModificar_Click(object sender, RoutedEventArgs e)
-        {
-            new ModificarProducto().Show();
+            Login ventana = new Login();
+            ventana.Show();
+            Close();
         }
     }
 }

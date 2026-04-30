@@ -1,5 +1,4 @@
-﻿using SGIPE_Frontend.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -10,38 +9,73 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using SGIPE_Frontend.Models;
+using SGIPE_Frontend.Services;
+using SGIPE_Frontend.View;
 
 namespace SGIPE_Frontend.Views
 {
     public partial class Login : Window
     {
+        private readonly ApiService _apiService;
+
         public Login()
         {
             InitializeComponent();
+            _apiService = new ApiService();
         }
 
-        private void BtnLogin_Click(object sender, RoutedEventArgs e)
+        private async void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtPassword.Password))
+            string username = txtUsuario.Text.Trim();
+            string password = txtPassword.Password.Trim();
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
-                MessageBox.Show("Llena todos los campos");
+                MessageBox.Show(
+                    "Ingrese usuario y contraseña.",
+                    "Campos requeridos",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning
+                );
                 return;
             }
 
+            try
+            {
+                btnLogin.IsEnabled = false;
 
-            if (txtUsuario.Text == "admin" && txtPassword.Password == "1234")
-            {
-                new MenuPrincipal().Show();
+                UsuarioLoginResponse? usuario = await _apiService.Login(username, password);
+
+                if (usuario == null)
+                {
+                    MessageBox.Show(
+                        "Usuario o contraseña incorrectos.",
+                        "Login inválido",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Error
+                    );
+
+                    return;
+                }
+
+                MenuPrincipal menu = new MenuPrincipal();
+                menu.Show();
+
                 this.Close();
             }
-            else if (txtUsuario.Text == "user" && txtPassword.Password == "1234")
+            catch (Exception ex)
             {
-                new MenuUsuario().Show();
-                this.Close();
+                MessageBox.Show(
+                    $"No se pudo conectar con el backend.\n\nDetalle: {ex.Message}",
+                    "Error de conexión",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
             }
-            else
+            finally
             {
-                MessageBox.Show("Datos incorrectos");
+                btnLogin.IsEnabled = true;
             }
         }
     }

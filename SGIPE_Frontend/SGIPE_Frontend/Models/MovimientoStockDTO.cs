@@ -18,7 +18,7 @@ namespace SGIPE_Frontend.Models
 
         public string? UsuarioNombre { get; set; }
 
-        public string Tipo { get; set; } = string.Empty;
+        public int Tipo { get; set; } 
 
         public int Cantidad { get; set; }
 

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Backend_SGIPE.Services;
 using Backend_SGIPE.Models;
 using Backend_SGIPE.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace Backend_SGIPE.Controllers;
 

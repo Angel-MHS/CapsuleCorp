@@ -1,8 +1,8 @@
-﻿<Window  x:Class="SGIPE_Frontend.View.CalcularInventario"
+﻿<Window x:Class="SGIPE_Frontend.View.CalcularInventario"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Calcular Inventario"
-        Height="550" Width="900"
+        Height="650" Width="900"
         WindowStartupLocation="CenterScreen"
         Background="#1A1A1A">
 
@@ -13,6 +13,19 @@
             <Setter Property="Margin" Value="0,10,0,2"/>
         </Style>
 
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="5,0"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+        </Style>
+
+        <Style x:Key="InputComboBoxStyle" TargetType="ComboBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+        </Style>
+
         <Style x:Key="BtnBase" TargetType="Button">
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Height" Value="38"/>
@@ -21,6 +34,12 @@
 
         <Style x:Key="BtnCalcularStyle" TargetType="Button" BasedOn="{StaticResource BtnBase}">
             <Setter Property="Background" Value="#2575BB"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style x:Key="BtnGuardarStyle" TargetType="Button" BasedOn="{StaticResource BtnBase}">
+            <Setter Property="Background" Value="#1F8F4D"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
         </Style>
@@ -41,7 +60,7 @@
             </RadialGradientBrush>
         </Grid.Background>
 
-        <Border Width="420"
+        <Border Width="520"
                 Background="White"
                 CornerRadius="25"
                 BorderBrush="#2575BB"
@@ -55,45 +74,83 @@
             </Border.Effect>
 
             <StackPanel>
-                <TextBlock Text="CÁLCULO DE STOCK"
+                <TextBlock Text="MOVIMIENTO DE INVENTARIO"
                            FontSize="24"
                            FontWeight="ExtraBold"
                            Foreground="#1A1A1A"
                            HorizontalAlignment="Center"
                            Margin="0,0,0,15"/>
 
-                <TextBlock Text="Stock Actual" Style="{StaticResource LabelStyle}"/>
-                <TextBox Name="txtStock" Height="30" VerticalContentAlignment="Center" Padding="5,0"/>
+                <TextBlock Text="Producto" Style="{StaticResource LabelStyle}"/>
+                <ComboBox Name="cmbProducto"
+                          Style="{StaticResource InputComboBoxStyle}"
+                          SelectionChanged="cmbProducto_SelectionChanged"/>
 
-                <TextBlock Text="Cantidad a mover" Style="{StaticResource LabelStyle}"/>
-                <TextBox Name="txtCantidad" Height="30" VerticalContentAlignment="Center" Padding="5,0"/>
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="0,0,10,0">
+                        <TextBlock Text="Stock Actual" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="txtStock"
+                                 Style="{StaticResource InputTextBoxStyle}"
+                                 IsReadOnly="True"
+                                 Background="#F0F0F0"/>
+                    </StackPanel>
 
-                <TextBlock Text="Tipo de Movimiento" Style="{StaticResource LabelStyle}"/>
-                <ComboBox Name="cmbTipo" SelectedIndex="0" Height="30" VerticalContentAlignment="Center">
-                    <ComboBoxItem Content="Entrada"/>
-                    <ComboBoxItem Content="Salida"/>
-                </ComboBox>
+                    <StackPanel Margin="10,0,0,0">
+                        <TextBlock Text="Cantidad a mover" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="txtCantidad"
+                                 Style="{StaticResource InputTextBoxStyle}"/>
+                    </StackPanel>
+                </UniformGrid>
+
+                <UniformGrid Columns="2">
+                    <StackPanel Margin="0,0,10,0">
+                        <TextBlock Text="Tipo de Movimiento" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cmbTipo"
+                                  SelectedIndex="0"
+                                  Style="{StaticResource InputComboBoxStyle}">
+                            <ComboBoxItem Content="Entrada"/>
+                            <ComboBoxItem Content="Salida"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <StackPanel Margin="10,0,0,0">
+                        <TextBlock Text="ID Usuario" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="txtUsuarioId"
+                                 Style="{StaticResource InputTextBoxStyle}"/>
+                    </StackPanel>
+                </UniformGrid>
+
+                <TextBlock Text="Motivo" Style="{StaticResource LabelStyle}"/>
+                <TextBox Name="txtMotivo"
+                         Style="{StaticResource InputTextBoxStyle}"/>
 
                 <Button Content="CALCULAR NUEVO TOTAL"
                         Style="{StaticResource BtnCalcularStyle}"
                         Margin="0,25,0,0"
                         Click="BtnCalcular_Click"/>
 
-                <Border Margin="0,15,0,0" 
-                        Background="#F0F7FF" 
-                        CornerRadius="10" 
+                <Border Margin="0,15,0,0"
+                        Background="#F0F7FF"
+                        CornerRadius="10"
                         Padding="10">
                     <TextBlock Name="txtResultado"
-                               Text="Esperando cálculo..."
-                               FontSize="16"
+                               Text="Seleccione un producto y capture los datos del movimiento."
+                               FontSize="15"
                                FontWeight="Bold"
                                Foreground="#2575BB"
-                               TextAlignment="Center"/>
+                               TextAlignment="Center"
+                               TextWrapping="Wrap"/>
                 </Border>
+
+                <Button Name="btnRegistrar"
+                        Content="REGISTRAR MOVIMIENTO"
+                        Style="{StaticResource BtnGuardarStyle}"
+                        Margin="0,15,0,0"
+                        Click="BtnRegistrar_Click"/>
 
                 <Button Content="REGRESAR"
                         Style="{StaticResource BtnRegresarStyle}"
-                        Margin="0,15,0,0"
+                        Margin="0,10,0,0"
                         Click="BtnRegresar_Click"/>
             </StackPanel>
         </Border>

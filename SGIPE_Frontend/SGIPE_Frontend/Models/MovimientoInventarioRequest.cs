@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SGIPE_Frontend.Models
 {
-    public class MovimientoStockRequest
+    public class MovimientoInventarioRequest
     {
         public int ProductoId { get; set; }
 

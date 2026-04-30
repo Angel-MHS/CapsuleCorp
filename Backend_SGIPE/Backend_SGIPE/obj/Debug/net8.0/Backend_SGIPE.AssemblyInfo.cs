@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backend_SGIPE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a8bbaa5dc0adcf917911e4fb48bc8f1a3464751")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7de3a88e77274aba232d1bbadce283266d55399")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backend_SGIPE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backend_SGIPE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,9 @@ public class MovimientoInventario
 
     public int Cantidad { get; set; }
 
-    public enum TipoMovimiento { ENTRADA, SALIDA }
+    public enum TipoMovimiento { 
+        ENTRADA = 1, 
+        SALIDA = 2 }
 
     public TipoMovimiento Tipo { get; set; }
     // "Entrada" o "Salida"

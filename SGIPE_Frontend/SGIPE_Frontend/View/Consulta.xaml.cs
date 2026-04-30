@@ -1,43 +1,70 @@
-﻿using SGIPE_Frontend.Services;
-using SGIPE_Frontend.Views;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using SGIPE_Frontend.Models;
+using SGIPE_Frontend.Services;
 
 namespace SGIPE_Frontend.Views
 {
-    /// <summary>
-    /// Lógica de interacción para Consulta.xaml
-    /// </summary>
     public partial class Consulta : Window
     {
+        private readonly ApiService _apiService;
+
         public Consulta()
         {
             InitializeComponent();
-            CargarProductos();
+            _apiService = new ApiService();
 
+            Loaded += Consulta_Loaded;
         }
-        private async void CargarProductos()
+
+        private async void Consulta_Loaded(object sender, RoutedEventArgs e)
         {
-            ProductoService servicio = new ProductoService();
+            await CargarProductos();
+        }
 
-            var lista = await servicio.ObtenerProductos();
+        private async Task CargarProductos()
+        {
+            try
+            {
+                List<ProductoResponseDTO> productos = await _apiService.ObtenerProductos();
 
-            dataGridProductos.ItemsSource = lista;
+                var productosGrid = productos.Select(p => new ProductoGridItem
+                {
+                    id = p.Id,
+                    nombre = p.Nombre,
+                    stock = p.Stock,
+                    precioVenta = p.PrecioVenta
+                }).ToList();
+
+                dataGridProductos.ItemsSource = productosGrid;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"No se pudieron cargar los productos.\n\nDetalle: {ex.Message}",
+                    "Error",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                );
+            }
         }
 
         private void BtnRegresar_Click(object sender, RoutedEventArgs e)
         {
-            new MenuPrincipal().Show();
-            this.Close();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            Close();
+        }
+
+        private class ProductoGridItem
+        {
+            public int id { get; set; }
+            public string nombre { get; set; } = string.Empty;
+            public int stock { get; set; }
+            public decimal precioVenta { get; set; }
         }
     }
 }
