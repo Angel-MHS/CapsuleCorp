@@ -1,0 +1,430 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\menuusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\menuusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\menuprincipal.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\modificarproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\modificarproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\consulta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\consulta.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\menuusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\menuusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\catalogo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\catalogo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\catalogo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\catalogo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\modificarproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\modificarproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\calcularinventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\calcularinventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\calcularinventario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\calcularinventario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\inventario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\inventario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\inventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\inventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\services\\productoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\bajaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\bajaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\bajaproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\bajaproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\altaproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\altaproducto.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\altaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\altaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hange\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\hange\\documents\\github\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\consulta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\consulta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Consulta.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Consulta.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Consulta.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:36:01.94Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Catalogo.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Catalogo.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Catalogo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T14:33:24.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MenuUsuario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuUsuario.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\MenuUsuario.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuUsuario.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\MenuUsuario.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T14:32:03.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Login.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Login.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAArwC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T20:12:30.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuUsuario.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuUsuario.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\MenuUsuario.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuUsuario.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\MenuUsuario.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T14:30:59.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\Producto.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T14:27:13.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModificarProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T14:21:40.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuPrincipal.xaml*",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\MenuPrincipal.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:13:58.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuPrincipal.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuPrincipal.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\MenuPrincipal.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\MenuPrincipal.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\MenuPrincipal.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T21:21:21.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Catalogo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T14:34:39.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModificarProducto.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\ModificarProducto.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\ModificarProducto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T14:20:15.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CalcularInventario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-29T14:17:20.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CalcularInventario.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\CalcularInventario.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\CalcularInventario.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-29T14:14:13.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Inventario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:53:30.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Movimiento.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\Movimiento.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\Movimiento.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\Movimiento.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\Movimiento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:51:29.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Inventario.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Inventario.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Inventario.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:37:01.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductoService.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Services\\ProductoService.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Services\\ProductoService.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Services\\ProductoService.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Services\\ProductoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T00:44:27.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BajaProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:43:28.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BajaProducto.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\BajaProducto.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\BajaProducto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:36:45.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AltaProducto.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\AltaProducto.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\AltaProducto.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:36:22.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AltaProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:33:31.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ResourcePart.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs",
+              "ToolTip": "C:\\Users\\hange\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs [Solo lectura]",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvxkAAAADAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:11:53.465Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\App.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\App.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\App.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T21:18:37.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Login.xaml",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Login.xaml",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Login.xaml",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-27T20:08:29.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Consulta.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "ToolTip": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwB8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T00:46:20.314Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

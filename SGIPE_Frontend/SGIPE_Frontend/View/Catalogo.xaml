@@ -1,0 +1,84 @@
+﻿<Window x:Class="SGIPE_Frontend.View.Catalogo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Catálogo"
+        Height="500" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#1A1A1A">
+
+    <Window.Resources>
+        <Style x:Key="BtnRegresarStyle" TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2575BB"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="#2575BB"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#F0F7FF"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.7" RadiusY="0.7">
+                <GradientStop Color="#2575BB" Offset="0"/>
+                <GradientStop Color="#000000" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <Border Width="700" Height="430"
+                Background="White"
+                CornerRadius="25"
+                BorderBrush="#2575BB"
+                BorderThickness="8"
+                Padding="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#2575BB" Opacity="0.3"/>
+            </Border.Effect>
+
+            <StackPanel>
+                <TextBlock Text="CATÁLOGO DE PRODUCTOS"
+                           FontSize="24"
+                           FontWeight="ExtraBold"
+                           Foreground="#1A1A1A"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,15"/>
+
+                <DataGrid Name="dataGridCatalogo"
+                          AutoGenerateColumns="False"
+                          Height="260"
+                          Background="White"
+                          BorderBrush="#DDDDDD"
+                          RowBackground="#FDFDFD"
+                          AlternatingRowBackground="White"
+                          GridLinesVisibility="Horizontal"
+                          HorizontalGridLinesBrush="#EEEEEE"
+                          IsReadOnly="True"
+                          CanUserAddRows="False">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="60"/>
+                        <DataGridTextColumn Header="Nombre del Producto" Binding="{Binding nombre}" Width="*"/>
+                        <DataGridTextColumn Header="Precio de Venta" Binding="{Binding precioVenta}" Width="150"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Button Content="REGRESAR AL MENÚ"
+                        Style="{StaticResource BtnRegresarStyle}"
+                        Margin="0,15,0,0"
+                        Click="BtnRegresar_Click"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

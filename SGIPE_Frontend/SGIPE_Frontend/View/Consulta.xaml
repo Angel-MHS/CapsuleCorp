@@ -1,0 +1,77 @@
+﻿<Window x:Class="SGIPE_Frontend.Views.Consulta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Consulta"
+        Height="500" Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#1A1A1A">
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2575BB"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="#2575BB"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.7" RadiusY="0.7">
+                <GradientStop Color="#2575BB" Offset="0"/>
+                <GradientStop Color="#000000" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <Border Width="700" Height="420"
+                Background="White"
+                CornerRadius="25"
+                BorderBrush="#2575BB"
+                BorderThickness="8"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="20">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="15" ShadowDepth="0" Color="#2575BB" Opacity="0.4"/>
+            </Border.Effect>
+
+            <StackPanel>
+                <TextBlock Text="CONSULTA DE PRODUCTOS"
+                           Foreground="#1A1A1A"
+                           FontSize="22"
+                           FontWeight="ExtraBold"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,15"/>
+
+                <DataGrid Name="dataGridProductos"
+                          AutoGenerateColumns="False"
+                          Height="260"
+                          Background="White"
+                          BorderBrush="#DDDDDD"
+                          RowBackground="#F9F9F9"
+                          AlternatingRowBackground="White"
+                          GridLinesVisibility="Horizontal"
+                          HorizontalGridLinesBrush="#EEEEEE"
+                          CanUserAddRows="False">
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="50"/>
+                        <DataGridTextColumn Header="Nombre" Binding="{Binding nombre}" Width="*"/>
+                        <DataGridTextColumn Header="Stock" Binding="{Binding stock}" Width="80"/>
+                        <DataGridTextColumn Header="Precio Venta" Binding="{Binding precioVenta}" Width="120"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Button Content="REGRESAR AL MENÚ"
+                        Margin="0,15,0,0"
+                        Width="200"
+                        HorizontalAlignment="Center"
+                        Click="BtnRegresar_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
