@@ -20,7 +20,7 @@ namespace SGIPE_Frontend.View
     /// </summary>
     public partial class ModificarProducto : Window
     {
-        private Producto productoSeleccionado;
+        private ProductoResponseDTO productoSeleccionado;
 
         public ModificarProducto()
         {
@@ -38,7 +38,7 @@ namespace SGIPE_Frontend.View
 
         private void dataGridProductos_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            if (dataGridProductos.SelectedItem is Producto producto)
+            if (dataGridProductos.SelectedItem is ProductoResponseDTO producto)
             {
                 productoSeleccionado = producto;
 

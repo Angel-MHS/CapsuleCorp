@@ -25,9 +25,6 @@ namespace SGIPE_Frontend.Views
         }
         private async void CargarProductos()
         {
-            ProductoService servicio = new ProductoService();
-            var lista = await servicio.ObtenerProductos();
-            dataGridProductos.ItemsSource = lista;
         }
 
         private void BtnEliminar_Click(object sender, RoutedEventArgs e)
@@ -38,7 +35,6 @@ namespace SGIPE_Frontend.Views
                 return;
             }
 
-            MessageBox.Show("Producto eliminado (simulado)");
         }
 
         private void BtnRegresar_Click(object sender, RoutedEventArgs e)

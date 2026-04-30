@@ -234,5 +234,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend_SGIPE.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Backend_SGIPE.DTos.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -23,7 +23,6 @@ namespace SGIPE_Frontend.Views
         }
         private void BtnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Producto guardado (simulado)");
         }
 
         private void BtnRegresar_Click(object sender, RoutedEventArgs e)

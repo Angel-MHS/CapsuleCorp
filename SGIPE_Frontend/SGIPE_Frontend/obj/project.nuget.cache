@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "pql8+uy9OVc=",
+  "dgSpecHash": "Vvu9TB9N0Gs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hange\\Documents\\GitHub\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\SGIPE_Frontend.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\SGIPE_Frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Votic\\.nuget\\packages\\microsoft.ui.xaml\\2.8.7\\microsoft.ui.xaml.2.8.7.nupkg.sha512",
+    "C:\\Users\\Votic\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\Votic\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Votic\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\Votic\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -23,8 +23,13 @@ public class UsuarioRepository : IUsuarioRepository
     public async Task<List<Usuario>> ObtenerTodos()
     {
         return await _context.Usuarios
-            .Where(u => u.Activo)
-            .Include(u => u.Rol)
             .ToListAsync();
+    }
+
+    public async Task<Usuario?> ObtenerPorUsername(string username)
+    {
+        return await _context.Usuarios
+            .Include(u => u.Rol)
+            .FirstOrDefaultAsync(u => u.Nombre == username);
     }
 }

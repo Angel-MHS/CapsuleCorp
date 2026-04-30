@@ -10,12 +10,11 @@ public class Usuario
 
     public string Nombre { get; set; } = string.Empty;
 
+    [Column("email")]
     public string Correo { get; set; } = string.Empty;
 
     [Column("password_hash")]
-    public string PasswordHash { get; set; } = string.Empty;
-
-    public bool Activo { get; set; } = true;
+    public string Password { get; set; } = string.Empty;
 
     [Column("fecha_creacion")]
     public DateTime FechaCreacion { get; set; } = DateTime.Now;

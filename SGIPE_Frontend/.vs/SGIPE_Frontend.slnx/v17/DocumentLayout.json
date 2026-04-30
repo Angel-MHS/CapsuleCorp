@@ -1,0 +1,347 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\sgipe_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\sgipe_frontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\categoriaupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\categoriaupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\categoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\categoriaresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\categoriacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\categoriacreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\modificarproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\modificarproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\bajaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\bajaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\altaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\altaproducto.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\inventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\inventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\consulta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\consulta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\catalogo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\catalogo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\usuariologinresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\usuariologinresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\productoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\productoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\productoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\productoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\productocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\productocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\movimientostockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\movimientostockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\movimientoinventariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\movimientoinventariorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|c:\\users\\votic\\escritorio\\capsulecorp\\sgipe_frontend\\sgipe_frontend\\view\\calcularinventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{948EC4AD-E724-EE51-8417-9EFB0E62F523}|SGIPE_Frontend\\SGIPE_Frontend.csproj|solutionrelative:sgipe_frontend\\view\\calcularinventario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SGIPE_Frontend",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\SGIPE_Frontend.csproj",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\SGIPE_Frontend.csproj",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\SGIPE_Frontend.csproj",
+              "RelativeToolTip": "SGIPE_Frontend\\SGIPE_Frontend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-30T07:21:26.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModificarProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\ModificarProducto.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAC0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:11:53.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AltaProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\AltaProducto.xaml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:51:47.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Inventario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Inventario.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:09:53.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Consulta.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Consulta.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:09:46.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoriaCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaCreateDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\CategoriaCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaCreateDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\CategoriaCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:05:23.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MovimientoInventarioRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\MovimientoInventarioRequest.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\MovimientoInventarioRequest.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\MovimientoInventarioRequest.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\MovimientoInventarioRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:03:20.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoriaUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaUpdate.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\CategoriaUpdate.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaUpdate.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\CategoriaUpdate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:02:50.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MovimientoStockDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\MovimientoStockDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\MovimientoStockDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\MovimientoStockDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\MovimientoStockDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:01:37.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriaResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaResponseDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\CategoriaResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\CategoriaResponseDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\CategoriaResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T07:00:11.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductoUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoUpdateDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\ProductoUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoUpdateDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\ProductoUpdateDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:59:40.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductoCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoCreateDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\ProductoCreateDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoCreateDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\ProductoCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:59:10.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Services\\ApiService.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Services\\ApiService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAqwIgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:56:25.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:55:25.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductoResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoResponseDTO.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\ProductoResponseDTO.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\ProductoResponseDTO.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\ProductoResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:54:51.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioLoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\UsuarioLoginResponse.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\Models\\UsuarioLoginResponse.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\Models\\UsuarioLoginResponse.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\Models\\UsuarioLoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:54:22.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Catalogo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\Catalogo.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAD4vx0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:52:49.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CalcularInventario.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\CalcularInventario.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:52:23.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BajaProducto.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "RelativeDocumentMoniker": "SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "ToolTip": "C:\\Users\\Votic\\Escritorio\\CapsuleCorp\\SGIPE_Frontend\\SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "RelativeToolTip": "SGIPE_Frontend\\View\\BajaProducto.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T06:52:00.711Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,4 +8,6 @@ public interface IUsuarioRepository
 {
     Task<Usuario?> ObtenerPorId(int id);
     Task<List<Usuario>> ObtenerTodos();
+
+    Task<Usuario?> ObtenerPorUsername(string username);
 }

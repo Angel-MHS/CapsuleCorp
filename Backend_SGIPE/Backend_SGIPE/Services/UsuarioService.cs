@@ -21,4 +21,17 @@ public class UsuarioService
     {
         return await _usuarioRepo.ObtenerPorId(id);
     }
+
+    public async Task<Usuario?> Login(string username, string password)
+    {
+        var usuario = await _usuarioRepo.ObtenerPorUsername(username);
+
+        if (usuario == null)
+            return null;
+
+        if (usuario.Password != password)
+            return null;
+
+        return usuario;
+    }
 }

@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Backend_SGIPE.Models;
+[Table("roles")]
 public class Rol
 {
     public int Id { get; set; }

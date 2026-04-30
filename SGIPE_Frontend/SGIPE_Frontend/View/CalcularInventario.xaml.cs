@@ -31,12 +31,7 @@ namespace SGIPE_Frontend.View
 
                 string tipo = (cmbTipo.SelectedItem as ComboBoxItem).Content.ToString();
 
-                int resultado;
-
-                if (tipo == "Entrada")
-                    resultado = stock + cantidad;
-                else
-                    resultado = stock - cantidad;
+                int resultado = 0;
 
                 txtResultado.Text = "Nuevo stock: " + resultado;
             }
