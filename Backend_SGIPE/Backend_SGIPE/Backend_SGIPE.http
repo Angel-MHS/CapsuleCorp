@@ -1,0 +1,6 @@
+@Backend_SGIPE_HostAddress = http://localhost:5225
+
+GET {{Backend_SGIPE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
