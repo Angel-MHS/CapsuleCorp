@@ -27,13 +27,28 @@ public class CategoriaService
         await _repo.Agregar(categoria);
     }
 
-    public async Task Actualizar(Categoria categoria)
+    public async Task<bool> Actualizar(Categoria categoria)
     {
+        var existente = await _repo.ObtenerPorId(categoria.Id);
+
+        if (existente == null)
+            return false;
+
         await _repo.Actualizar(categoria);
+        return true;
     }
 
-    public async Task Eliminar(int id)
+    public async Task<bool> Eliminar(int id)
     {
-        await _repo.Eliminar(id);
+        var categoria = await _repo.ObtenerPorId(id);
+
+        if (categoria == null)
+            return false;
+
+        categoria.Activo = false;
+
+        await _repo.Actualizar(categoria);
+        return true;
     }
+
 }

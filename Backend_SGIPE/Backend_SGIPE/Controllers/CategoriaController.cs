@@ -103,7 +103,10 @@ public class CategoriaController : ControllerBase
     {
         var categoria = MapToEntity(dto);
 
-        await _service.Actualizar(categoria);
+        var actualizado = await _service.Actualizar(categoria);
+
+        if (!actualizado)
+            return NotFound(new { mensaje = "Categoría no existe" });
 
         return Ok();
     }
@@ -112,14 +115,10 @@ public class CategoriaController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Eliminar(int id)
     {
-        var categoria = await _service.ObtenerPorId(id);
+        var eliminado = await _service.Eliminar(id);
 
-        if (categoria == null)
-            return NotFound();
-
-        categoria.Activo = false;
-
-        await _service.Actualizar(categoria);
+        if (!eliminado)
+            return NotFound(new { mensaje = "Categoría no existe" });
 
         return Ok();
     }
