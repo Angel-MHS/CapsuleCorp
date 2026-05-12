@@ -3,6 +3,8 @@ using Backend_SGIPE.Data;
 using Backend_SGIPE.Models;
 using Backend_SGIPE.Repositories;
 using static Backend_SGIPE.Models.MovimientoInventario;
+using Backend_SGIPE.DTos;
+using System.Linq;
 
 namespace Backend_SGIPE.Services;
 
@@ -25,9 +27,20 @@ public class ProductoService
         _context = context;
     }
 
-    public async Task<List<Producto>> ObtenerProductos()
+    public async Task<List<ProductoResponseDTO>> ObtenerProductos()
     {
-        return await _productoRepo.ObtenerTodos();
+        var productos = await _productoRepo.ObtenerTodos();
+
+        return productos.Select(p => new ProductoResponseDTO
+        {
+            Id = p.Id,
+            Nombre = p.Nombre,
+            Descripcion = p.Descripcion,
+            CategoriaId = p.CategoriaId,
+            CategoriaNombre = p.Categoria != null ? p.Categoria.Nombre : string.Empty,
+            Stock = p.Stock,
+            PrecioVenta = p.Precio
+        }).ToList();
     }
 
     public async Task<Producto?> ObtenerPorId(int id)

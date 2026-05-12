@@ -14,7 +14,9 @@ namespace SGIPE_Frontend.Models
 
         public string? Descripcion { get; set; }
 
-        public string CategoriaNombre { get; set; } = string.Empty;
+        public int CategoriaId { get; set; }
+        public string CategoriaNombre { get; set; }
+     
 
         public int Stock { get; set; }
 

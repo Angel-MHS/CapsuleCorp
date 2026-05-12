@@ -475,6 +475,10 @@
             "type": "string",
             "nullable": true
           },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
           "categoriaId": {
             "type": "integer",
             "format": "int32"

@@ -35,7 +35,8 @@ public class ProductoController : ControllerBase
             Nombre = dto.Nombre,
             CategoriaId = dto.CategoriaId,
             Stock = dto.Stock,
-            Precio = dto.PrecioVenta
+            Precio = dto.PrecioVenta,
+            Descripcion = dto.Descripcion
         };
     }
     private ProductoResponseDTO MapToDTO(Producto p)
@@ -44,7 +45,9 @@ public class ProductoController : ControllerBase
         {
             Id = p.Id,
             Nombre = p.Nombre,
-            CategoriaNombre = p.Categoria.Nombre,
+            Descripcion = p.Descripcion,
+            CategoriaId = p.CategoriaId,
+            CategoriaNombre = p.Categoria != null ? p.Categoria.Nombre : string.Empty,
             Stock = p.Stock,
             PrecioVenta = p.Precio
         };
@@ -65,10 +68,8 @@ public class ProductoController : ControllerBase
     public async Task<IActionResult> ObtenerTodos()
     {
         var productos = await _productoService.ObtenerProductos();
-        
-        var response = MapToDTOList(productos);
 
-        return Ok(response);
+        return Ok(productos);
     }
 
     // GET: api/producto/5

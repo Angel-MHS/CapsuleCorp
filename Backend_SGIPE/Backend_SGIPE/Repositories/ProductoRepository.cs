@@ -2,6 +2,7 @@
 using Backend_SGIPE.Models;
 using Backend_SGIPE.Data;
 using Microsoft.EntityFrameworkCore;
+using Backend_SGIPE.DTos;
 
 namespace Backend_SGIPE.Repositories;
 public class ProductoRepository : IProductoRepository
@@ -15,7 +16,9 @@ public class ProductoRepository : IProductoRepository
 
     public async Task<List<Producto>> ObtenerTodos()
     {
-        return await _context.Productos.Include(p => p.Categoria).ToListAsync();
+        return await _context.Productos
+            .Include(p => p.Categoria)
+            .ToListAsync();
     }
 
     public async Task<Producto?> ObtenerPorId(int id)
@@ -31,13 +34,17 @@ public class ProductoRepository : IProductoRepository
 
     public async Task Actualizar(Producto producto)
     {
-        // Desvincula la navegación para que EF no la toque
-        if (producto.Categoria != null)
-        {
-            _context.Entry(producto.Categoria).State = EntityState.Unchanged;
-        }
+        var productoExistente = await _context.Productos.FindAsync(producto.Id);
 
-        _context.Productos.Update(producto);
+        if (productoExistente == null)
+            throw new Exception("Producto no encontrado.");
+
+        productoExistente.Nombre = producto.Nombre;
+        productoExistente.Stock = producto.Stock;
+        productoExistente.Precio = producto.Precio;
+        productoExistente.Descripcion = producto.Descripcion;
+        productoExistente.CategoriaId = producto.CategoriaId;
+
         await _context.SaveChangesAsync();
     }
 
