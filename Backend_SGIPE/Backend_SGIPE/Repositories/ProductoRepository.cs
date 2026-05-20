@@ -17,8 +17,9 @@ public class ProductoRepository : IProductoRepository
     public async Task<List<Producto>> ObtenerTodos()
     {
         return await _context.Productos
-            .Include(p => p.Categoria)
-            .ToListAsync();
+           .Include(p => p.Categoria)
+           .Where(p => p.Activo)
+           .ToListAsync();
     }
 
     public async Task<Producto?> ObtenerPorId(int id)

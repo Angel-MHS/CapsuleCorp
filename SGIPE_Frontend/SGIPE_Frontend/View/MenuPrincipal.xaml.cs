@@ -47,8 +47,8 @@ namespace SGIPE_Frontend.Views
 
         private void BtnCalcular_Click(object sender, RoutedEventArgs e)
         {
-            CalcularInventario ventana = new CalcularInventario();
-            ventana.Show();
+            CalcularInventario inventario = new CalcularInventario("Administrador");
+            inventario.Show();
             Close();
         }
 

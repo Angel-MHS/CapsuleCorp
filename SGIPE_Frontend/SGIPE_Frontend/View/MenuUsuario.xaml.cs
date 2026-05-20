@@ -25,12 +25,16 @@ namespace SGIPE_Frontend.View
 
         private void BtnCatalogo_Click(object sender, RoutedEventArgs e)
         {
-            new Catalogo().Show();
+            Catalogo catalogo = new Catalogo("Empleado");
+            catalogo.Show();
+            Close();
         }
 
         private void BtnCalcular_Click(object sender, RoutedEventArgs e)
         {
-            new CalcularInventario().Show();
+            CalcularInventario inventario = new CalcularInventario("Empleado");
+            inventario.Show();
+            Close();
         }
 
         private void BtnCerrar_Click(object sender, RoutedEventArgs e)

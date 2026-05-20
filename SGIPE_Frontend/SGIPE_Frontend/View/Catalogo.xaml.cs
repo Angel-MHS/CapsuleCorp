@@ -12,11 +12,14 @@ namespace SGIPE_Frontend.View
     public partial class Catalogo : Window
     {
         private readonly ApiService _apiService;
+        private readonly string _rolUsuario;
 
-        public Catalogo()
+        public Catalogo(string rolUsuario)
         {
             InitializeComponent();
+
             _apiService = new ApiService();
+            _rolUsuario = rolUsuario;
 
             Loaded += Catalogo_Loaded;
         }
@@ -54,8 +57,32 @@ namespace SGIPE_Frontend.View
 
         private void BtnRegresar_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
+            RegresarAlMenu();
+        }
+
+        private void RegresarAlMenu()
+        {
+            if (_rolUsuario.Equals("Administrador", StringComparison.OrdinalIgnoreCase))
+            {
+                MenuPrincipal menu = new MenuPrincipal();
+                menu.Show();
+            }
+            else if (_rolUsuario.Equals("Empleado", StringComparison.OrdinalIgnoreCase))
+            {
+                MenuUsuario menu = new MenuUsuario();
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show(
+                    "No se pudo determinar a qué menú regresar.",
+                    "Error de navegación",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning
+                );
+                return;
+            }
+
             Close();
         }
 

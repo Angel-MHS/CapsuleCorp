@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using SGIPE_Frontend.Models;
 using SGIPE_Frontend.Services;
 using SGIPE_Frontend.View;
@@ -55,14 +46,30 @@ namespace SGIPE_Frontend.Views
                         MessageBoxButton.OK,
                         MessageBoxImage.Error
                     );
-
                     return;
                 }
 
-                MenuPrincipal menu = new MenuPrincipal();
-                menu.Show();
-
-                this.Close();
+                if (usuario.RolNombre == "ADMIN")
+                {
+                    MenuPrincipal menu = new MenuPrincipal();
+                    menu.Show();
+                    this.Close();
+                }
+                else if (usuario.RolNombre == "EMPLEADO")
+                {
+                    MenuUsuario menuUsuario = new MenuUsuario();
+                    menuUsuario.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "El rol del usuario no es válido o no está registrado correctamente.",
+                        "Rol no reconocido",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Warning
+                    );
+                }
             }
             catch (Exception ex)
             {
